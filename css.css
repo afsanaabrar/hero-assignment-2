@@ -1,0 +1,361 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* start header section */
+/* NAVIGATION section start */
+.hed{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(216, 212, 212)
+}
+.hed-icon{
+    display:flex;
+    gap:9px;
+    font-size: 1.6rem;
+}
+.hed-icon img{
+    width:3rem;
+}
+.hed-icon span{
+    color:#FF42A5;
+}
+.hed-ul{
+    display:flex;
+    list-style: none;
+}
+.hed-ul li{
+   padding:20px;
+}
+.hed-ul >li>a{
+   text-decoration:none;
+   color:black; 
+}
+.ded-youtub-icon{
+    display: flex;
+    gap:9px;
+    background-color: rgb(250, 251, 252);
+    padding:8px;
+    border-radius: 7px;
+}
+/* start banner section */
+.banner-container{
+    display:flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color:rgb(231, 225, 225);
+}
+.banner-content{
+    padding:90px 20px 90px 90px;
+}
+.banner-content h1{
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+font-size: 70px;
+font-weight: 800;
+}
+.banner-content h2{
+    color: #0B0223;
+    font-size: 35px;
+    font-weight: 600;
+}
+.banner-content p{
+    color:#534C64;
+    font-size: 15px;
+    line-height: 15px;
+    margin-top:20px;
+}
+.comon{
+    display: inline-flex;
+padding: 10px 30px;
+border-radius: 48px;
+border:none;
+background: var(--linear, linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+color:white;
+margin-top:25px;
+}
+.go{
+    display: inline-flex;
+    padding: 10px 30px;
+    border-radius: 48px;
+background: #4EC5F7;
+border:none;
+color:white;
+}
+
+.banner-img img{
+    height:600px;
+}
+/* start main section */
+
+/* start gammer section */
+.gammer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:bisque;
+    gap:20px;
+
+}
+.gammer-img img{
+    padding:40px 0px 0px 110px;
+    height:500px;
+
+}
+.gammer-content{
+
+    margin-right: 200px;
+    text-align: right;
+}
+.comon-h2{
+    text-align: right;
+font-size: 40px;
+font-weight: 700;
+background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.gammer-content p{
+    color: #534C64;
+text-align: right;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px; /* 166.667% */
+}
+.gammer-content h5{
+    color: #534C64;
+font-size: 24px;
+font-weight: 700;
+line-height: 30px; /* 187.5% */
+
+}
+.gammer-content>h5>span{
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px; /* 187.5% */
+}
+/* funny videos section */
+.videos-div1{
+    margin-top: 100px;
+}
+.videos-content{
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    line-height:40px;
+}
+.videos-content h2{
+    font-size: 40px;
+   
+}
+.videos-container{
+    display: flex;
+    align-items: center;
+    gap:30px;
+    margin-left: 250px;
+}
+.videos img{
+    margin-top: 100px; 
+    height:300px;
+}
+.videos img:hover{
+    opacity: 0.4;
+    color:#0B0223;
+}
+.videos p{
+    width:260px;
+}
+/* start instantly section */
+.inst-contain{
+    display:flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin-top: 150px;
+    position: relative;
+}
+.inst-content{
+    width:25%;
+    text-align: right;
+    margin-left: 50px;
+}
+.inst-contain span{
+    color: #F948B2;
+}
+.inst-content h1{
+    font-size: 40px;
+}
+.inst-content p{
+    margin-top: 10px;
+    line-height: 20px;
+}
+.inst-img img{
+    height:500px;
+    margin-right: 150px;
+}
+.absolute-img1{
+    position: absolute;
+    height: 300px;
+    top:300px;
+    right: 650px;
+}
+/* any time section start */
+.anytime-contain{
+    display:flex;
+    justify-content:space-around ;
+    align-items: center;
+    margin-top: 250px;
+    position: relative; 
+}
+.anytime-content{
+    width:25%;
+    text-align:left;
+    margin-left: 50px;
+}
+.anytime-span{
+    color:#F948B2;
+}
+.anytime-content h1{
+    font-size: 40px;
+}
+.anytime-content p{
+    margin-top: 10px;
+    line-height: 20px;
+}
+.anytime-img img{
+    height:500px;
+    margin-left: 150px;
+}
+.absolute-img2{
+    position: absolute;
+    height: 250px;
+    top:300px;
+    right: 750px;
+}
+
+
+
+
+/* Responsive for mobile */
+@media screen and (max-width: 425px) {
+    .anytime-contain,.gammer,.banner-container,.hed,.videos-container,.inst-contain{
+        flex-direction: column;
+    }
+    .banner-img img,.gammer-img img{
+        height:500px;
+        width:100%;
+    }
+    .banner-content{
+        padding:90px 20px 90px 40px;
+    }
+    .gammer-img img{
+        padding-left:20px;
+    }
+    .gammer-content{
+        margin-right:5px;
+    }
+    .videos-container{
+        margin-left: 0px;
+    }
+    .videos img{
+        margin-top: 7px;
+    }
+    .inst-content{
+        width:90%;
+        text-align: right;
+        margin-right:30px;
+       }
+    .inst-img img{
+        height:400px;
+        width:90%;
+        margin-left: 40px;
+        margin-top: 50px;
+    }
+    .inst-contain{
+        position: relative;
+    }
+    .absolute-img1{
+    position: absolute;
+       top:400px;
+        height: 00px;
+
+    }
+    .anytime-content{
+        width:100%;
+        text-align:center;
+        margin-top: 90px;
+    }
+    .anytime-img img{
+        height:400px;
+        margin-left:15px;
+    }
+    .absolute-img2{
+        position: absolute;
+        height: 200px;
+        top:450px;
+      }
+    
+
+  }
+  /* Responsive for Tablet */
+  @media screen and (max-width: 768px) {
+    .gammer,.banner-container,.hed,.videos-container,.anytime-contain,.inst-contain{
+        flex-direction: column;
+    }
+    .gammer-content{
+        margin-right:20px;
+    }
+    .gammer-img img{
+        margin-right: 80px;
+    }
+    .videos-container{
+        margin-left: 0px;
+    }
+    .videos img{
+        margin-top: 7px;
+    }
+    .inst-content{
+       width:50%;
+        text-align:center;
+        margin-right:30px;
+       }
+    .inst-img img{
+        height:400px;
+        margin-right: 0px;
+        margin-top:40px;
+    }
+    .absolute-img1{
+        position: absolute;
+        height: 200px;
+        top:550px;
+        right: 120px;
+    }
+
+    .absolute-img2{
+        position: absolute;
+        height: 200px;
+        left: 550px;
+        top:270px;
+    }
+    .anytime-img img{
+        height:400px;
+        width:100%;
+        margin-left: 30px;
+    }
+    .anytime-content{
+        width:50%;
+        text-align:center;
+        margin-top:100px;
+      
+    }
+   
+  }
+  
