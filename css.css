@@ -174,79 +174,131 @@ line-height: 30px; /* 187.5% */
 .videos p{
     width:260px;
 }
-/* start instantly section */
-.inst-contain{
-    display:flex;
-    justify-content:space-around ;
-    align-items: center;
-    margin-top: 150px;
-    position: relative;
-}
-.inst-content{
-    width:25%;
-    text-align: right;
-    margin-left: 50px;
-}
-.inst-contain span{
-    color: #F948B2;
-}
-.inst-content h1{
-    font-size: 40px;
-}
-.inst-content p{
-    margin-top: 10px;
-    line-height: 20px;
-}
-.inst-img img{
-    height:500px;
-    margin-right: 150px;
-}
-.absolute-img1{
-    position: absolute;
-    height: 300px;
-    top:300px;
-    right: 650px;
-}
+
+
 /* any time section start */
+.anytime{
+    margin-top:60px;
+}
 .anytime-contain{
-    display:flex;
-    justify-content:space-around ;
-    align-items: center;
-    margin-top: 250px;
-    position: relative; 
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    justify-content: space-around;
+}
+.anytime-img-contain{
+    width:440px;
+    height:465px;
+    margin-left: 200px;
+    margin-top: 100px;
+  
+}
+.img2-contain{
+position:relative;
+width:140px;
+top:-110px;
+right:-290px;
+
+
 }
 .anytime-content{
-    width:25%;
-    text-align:left;
-    margin-left: 50px;
+    width:100%;
+    margin-left:70px;
 }
-.anytime-span{
-    color:#F948B2;
-}
-.anytime-content h1{
-    font-size: 40px;
+.anytime-content h2{
+    font-size:40px;
+    width:350px;
 }
 .anytime-content p{
-    margin-top: 10px;
+    margin-top:15px;
     line-height: 20px;
 }
-.anytime-img img{
-    height:500px;
-    margin-left: 150px;
+
+.anytime-content span{
+    color:#F948B2;
 }
-.absolute-img2{
-    position: absolute;
-    height: 250px;
-    top:300px;
-    right: 750px;
+/* start advanced section */
+ .advanced {
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    width:74%;
+    gap:30px;
+    margin: 30px auto;
+    
+ } 
+ .icon-div{
+    display:flex;
+    align-items: center;
+    gap:5px;
 }
+.icon-div img{
+    margin-left:10px;
+}
+.icon-div:hover{
+    border:1px solid rgb(240, 3, 43);
+    border-radius:60px;
+    color:#FF42A5;
+}
+
+
+    
+
+
+/* start footer section */
+.foot{
+    background-color: #0B0223;
+    height:550px;
+    margin-top:100px;
+}
+.foot-div{
+    width:600px;
+    margin:auto;
+    padding-top:150px;
+    text-align: center;
+}
+.foot-icon>h2>span{
+    color:#F948B2;
+}
+.foot-icon{
+    color:white;
+    display: flex;
+    font-size: 25px;
+    margin-left: 200px;
+}
+.foot-div>ul{
+    display: grid;
+    color:white;
+    grid-template-columns:repeat(6,1fr);
+    justify-content: space-between;
+    list-style: none;
+    margin-top:40px;
+}
+.foot-social-icon i{
+    margin-top:30px;
+    margin-left: 20px;
+    font-size:30px;
+}
+.foot-p{
+    color:white;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    justify-content: space-between;
+    margin-top: 43px;
+    gap:10px;
+}
+.foot-small{
+    color:azure;
+    margin-top:50px;
+}
+
+
 
 
 
 
 /* Responsive for mobile */
 @media screen and (max-width: 425px) {
-    .anytime-contain,.gammer,.banner-container,.hed,.videos-container,.inst-contain{
+    .gammer,.banner-container,.hed,.videos-container,.inst-contain{
         flex-direction: column;
     }
     .banner-img img,.gammer-img img{
@@ -268,94 +320,77 @@ line-height: 30px; /* 187.5% */
     .videos img{
         margin-top: 7px;
     }
-    .inst-content{
-        width:90%;
-        text-align: right;
-        margin-right:30px;
-       }
-    .inst-img img{
-        height:400px;
-        width:90%;
-        margin-left: 40px;
-        margin-top: 50px;
-    }
-    .inst-contain{
-        position: relative;
-    }
-    .absolute-img1{
-    position: absolute;
-       top:400px;
-        height: 00px;
+    
+   
+/* anytime section */
+.anytime-contain{
+    grid-template-columns: 1fr;
+}
+.anytime-img-contain{
 
-    }
-    .anytime-content{
+    width:440px; 
+    margin-left:0px;
+    margin-top: 30px;
+  
+} 
+
+.anytime-content{
+    margin-left: 10px;
+    margin-right:10px;
+    text-align: center;
+}
+
+      
+
+.foot-div{
         width:100%;
-        text-align:center;
-        margin-top: 90px;
-    }
-    .anytime-img img{
-        height:400px;
-        margin-left:15px;
-    }
-    .absolute-img2{
-        position: absolute;
-        height: 200px;
-        top:450px;
       }
+      .foot-icon{
+          margin-left: 100px;
+    }
+      .foot-div>ul{
+        grid-template-columns:repeat(3,1fr) ;
+        gap:5px;
+      }
+      .advanced{
+        grid-template-columns: repeat(2,1fr);
+      }
+      .icon-div:hover{
+        border:1px solid rgb(240, 3, 43);
+        border-radius:60px;
+        color:#FF42A5;
+    }
     
 
   }
   /* Responsive for Tablet */
   @media screen and (max-width: 768px) {
-    .gammer,.banner-container,.hed,.videos-container,.anytime-contain,.inst-contain{
+
+    .hed,.banner-container,.gammer{
         flex-direction: column;
+        margin:0px auto;
+    }
+    .gammer-img{
+        margin-right:60px;
     }
     .gammer-content{
-        margin-right:20px;
-    }
-    .gammer-img img{
-        margin-right: 80px;
+        margin-right:10px;
     }
     .videos-container{
-        margin-left: 0px;
+        flex-direction: column;
+        margin:0px auto;
     }
-    .videos img{
-        margin-top: 7px;
-    }
-    .inst-content{
-       width:50%;
-        text-align:center;
-        margin-right:30px;
-       }
-    .inst-img img{
-        height:400px;
-        margin-right: 0px;
-        margin-top:40px;
-    }
-    .absolute-img1{
-        position: absolute;
-        height: 200px;
-        top:550px;
-        right: 120px;
-    }
-
-    .absolute-img2{
-        position: absolute;
-        height: 200px;
-        left: 550px;
-        top:270px;
-    }
-    .anytime-img img{
-        height:400px;
-        width:100%;
-        margin-left: 30px;
+    .anytime-contain{
+        grid-template-columns: 1fr;
     }
     .anytime-content{
-        width:50%;
         text-align:center;
-        margin-top:100px;
-      
+        width:450px;
+        margin-left: 150px;
     }
-   
+    .advanced{
+        grid-template-columns: repeat(3,1fr);
+        margin-top:60px;
+    }
+ 
   }
-  
