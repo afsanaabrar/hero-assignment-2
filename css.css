@@ -161,25 +161,83 @@ line-height: 30px; /* 187.5% */
     display: flex;
     align-items: center;
     gap:30px;
-    margin-left: 250px;
+    margin-left: 400px;
+    margin-top:250px
 }
-.videos img{
-    margin-top: 100px; 
-    height:300px;
+.videos-contain{  
+    height:330px;
+    transform:translate(-50%,-50%);
+  }
+  
+  .videos-contain  img{
+    height:100%;
+    width:100%;
+  }
+  .overlay{
+    border-radius: 15px;
+    position:absolute;
+    width:283px;
+    top:0px;
+    left:0px;
+    right:0px;
+    bottom: 0px;
+    opacity:0;
+    transition:opacity 0.4s ease-in-out;
+    background: black;
+  }
+  .overlay .content{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    color:white;
+    text-align:center;
+  }
+  .overlay .content .pt{
+    color:#F948B2;
+    margin-top:10px;
+  }
+  .videos-contain:hover .overlay{
+    opacity:0.8;
+   
+  }
+  /* start install section */
+  .inst-container{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items:center;
+    justify-content: space-around;
 }
-.videos img:hover{
-    opacity: 0.4;
-    color:#0B0223;
-}
-.videos p{
-    width:260px;
-}
+.inst-img-contain{
+    width:440px;
+    height:465px;
+    margin-left: 200px;
+    margin-top: 100px;
 
+  }
+  .img3-contain{
+    position:relative;
+    width:140px;
+    top:-120px;
+    right:20px;
+    }
+    .inst-content{
+        width:50%;
+        margin-left:170px;
+       
+    }
+    .inst-content p{
+        margin-top:15px;
+        line-height: 20px;
+    }
+    .inst-span{
+        color:#F948B2;
+    }
+    
+    
 
 /* any time section start */
-.anytime{
-    margin-top:60px;
-}
+
 .anytime-contain{
     display:grid;
     grid-template-columns: repeat(2,1fr);
@@ -198,11 +256,9 @@ position:relative;
 width:140px;
 top:-110px;
 right:-290px;
-
-
 }
 .anytime-content{
-    width:100%;
+    width:50%;
     margin-left:70px;
 }
 .anytime-content h2{
@@ -223,7 +279,7 @@ right:-290px;
     grid-template-columns: repeat(5,1fr);
     width:74%;
     gap:30px;
-    margin: 30px auto;
+    margin: 150px auto;
     
  } 
  .icon-div{
@@ -239,11 +295,6 @@ right:-290px;
     border-radius:60px;
     color:#FF42A5;
 }
-
-
-    
-
-
 /* start footer section */
 .foot{
     background-color: #0B0223;
@@ -278,14 +329,16 @@ right:-290px;
     margin-left: 20px;
     font-size:30px;
 }
-.foot-p{
+.foot-p>ul{
     color:white;
+    list-style: none;
     display:grid;
-    grid-template-columns:repeat(2,1fr);
+    grid-template-columns:repeat(4,1fr);
     justify-content: space-between;
     margin-top: 43px;
     gap:10px;
 }
+
 .foot-small{
     color:azure;
     margin-top:50px;
@@ -298,9 +351,26 @@ right:-290px;
 
 /* Responsive for mobile */
 @media screen and (max-width: 425px) {
-    .gammer,.banner-container,.hed,.videos-container,.inst-contain{
+    .gammer,.banner-container,.hed,.videos-container{
         flex-direction: column;
     }
+    .inst-container{
+        grid-template-columns: 1fr;
+    }
+    .inst-content{
+        text-align:center;
+    }
+    .inst-img-contain{
+        
+        margin-right:85px;
+    }
+    .first-video{
+        margin-top:200px;
+    }
+    .videos-contain {
+        margin-left:150px;
+    }
+  
     .banner-img img,.gammer-img img{
         height:500px;
         width:100%;
@@ -328,8 +398,8 @@ right:-290px;
 }
 .anytime-img-contain{
 
-    width:440px; 
-    margin-left:0px;
+    width:400px; 
+    margin-left:87px;
     margin-top: 30px;
   
 } 
@@ -380,17 +450,35 @@ right:-290px;
         flex-direction: column;
         margin:0px auto;
     }
+    .first-video{
+        margin-top:200px;
+    }
+    .videos-contain {
+        margin-left:150px;
+    }
+    .inst-container{
+        grid-template-columns: 1fr;
+    }
+    .inst-content{
+        text-align:center;
+    }
+    .inst-img-contain{
+        
+        margin-left:150px;
+    }
     .anytime-contain{
         grid-template-columns: 1fr;
     }
     .anytime-content{
         text-align:center;
         width:450px;
-        margin-left: 150px;
+        margin-left: 80px;
     }
     .advanced{
-        grid-template-columns: repeat(3,1fr);
+        grid-template-columns:repeat(2,1fr);
         margin-top:60px;
     }
  
   }
+
+
